@@ -1,1 +1,40 @@
 // Navigation Styles here
+nav {
+    Display: flex;
+    padding: 35px;
+    justify-content: center;
+    margin: 0 auto;
+    border-bottom: 2px dashed @navigation-border;
+
+    .navspace {
+        padding: 0 80px 0 80px;
+    }
+
+    a {
+        font-size: 2.0rem;
+        text-decoration: none;
+        color: black;
+        padding: 0 7px 0 3px;
+    }
+}
+
+@media @mobile {
+    nav {
+        Display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+        border-bottom: 2px dashed @navigation-border;
+        padding: 15px 0;
+        .funbusbanner {
+            text-align: center;
+        }
+
+        .navanchors {
+            text-align: center;
+            justify-content: space-evenly;
+
+        }
+    }
+}
